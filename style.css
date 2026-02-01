@@ -102,38 +102,29 @@ a {
     transform: translateY(0);
 }
 
-/* Header */
+/* Header (Simplified) */
 header {
-    position: fixed;
-    top: 0;
-    left: 0;
+    text-align: center;
+    padding: 30px 0 10px 0;
     width: 100%;
-    z-index: 1000;
-    background: rgba(5, 5, 5, 0.8);
-    backdrop-filter: blur(10px);
-    border-bottom: 1px solid rgba(0, 242, 255, 0.1);
-    padding: 20px 0;
+    z-index: 10;
+    position: relative;
+    background: transparent;
 }
 
-.header-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.logo {
-    display: flex;
-    align-items: center;
+.logo img {
+    height: 120px;
+    filter: drop-shadow(0 0 15px rgba(255, 215, 0, 0.4));
 }
 
 /* Hero Section */
 .hero {
-    min-height: 100vh;
+    min-height: auto;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding-top: 120px;
-    /* Header height + extra space */
+    padding: 20px 20px 100px 20px;
     position: relative;
     overflow: hidden;
     background: url('assets/bg.png') no-repeat center center/cover;
@@ -473,7 +464,7 @@ footer a {
     }
 
     .hero {
-        padding-top: 80px;
+        padding-top: 20px;
     }
 
     .hero p {
@@ -511,11 +502,6 @@ footer a {
     .product-item {
         width: 80%;
         max-width: none;
-    }
-
-    .header-content {
-        flex-direction: column;
-        gap: 15px;
     }
 
     .offer-box {
