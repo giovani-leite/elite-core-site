@@ -132,7 +132,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-top: 150px;
+    padding-top: 120px;
     /* Header height + extra space */
     position: relative;
     overflow: hidden;
@@ -470,6 +470,10 @@ footer a {
 
     .hero h1 {
         font-size: 1.8rem;
+    }
+
+    .hero {
+        padding-top: 80px;
     }
 
     .hero p {
