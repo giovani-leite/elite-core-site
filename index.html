@@ -26,7 +26,7 @@
         !function (f, b, e, v, n, t, s) {
             if (f.fbq) return; n = f.fbq = function () {
                 n.callMethod ?
-                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+                n.callMethod.apply(n, arguments) : n.queue.push(arguments)
             };
             if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
             n.queue = []; t = b.createElement(e); t.async = !0;
@@ -44,11 +44,10 @@
 
 <body>
 
-    <!-- 1) DISCREET HEADER (Optional, keeps focus on Hero) -->
+    <!-- 1) HEADER WITH OFFICIAL LOGO -->
     <header class="fade-in">
         <div class="container">
-            <!-- <img src="assets/logo.png" alt="Algoritmo de Elite" class="logo"> -->
-            <div class="logo-text">ALGORITMO DE ELITE™</div>
+            <img src="assets/logo_official.png" alt="Algoritmo de Elite™" class="logo-img">
         </div>
     </header>
 
@@ -59,26 +58,20 @@
                 <div class="badge">SISTEMA COMPROVADO DE PRODUTIVIDADE</div>
                 <h1>DELEGUE 90% DO SEU TRABALHO OPERACIONAL PARA A IA.</h1>
                 <p class="subheadline">Você não precisa de mais "dicas de ChatGPT". Você precisa de um **sistema**. O
-                    <span class="highlight">Algoritmo de Elite™</span> transforma profissonais comuns em estrategistas
-                    indispensáveis.
-                </p>
-
-                <!-- VSL PLACEHOLDER (New CRO Element) -->
-                <div class="vsl-container">
-                    <div class="vsl-placeholder">
-                        <i class="fas fa-play-circle"></i>
-                        <p>ASSISTA: Como funciona o sistema (2 min)</p>
-                    </div>
-                </div>
+                    <span class="highlight">Algoritmo de Elite™</span> transforma profissionais comuns em estrategistas
+                    indispensáveis.</p>
 
                 <a href="#offer" class="btn btn-primary pulsing-btn">SIM! QUERO DOBRAR MINHA PRODUTIVIDADE</a>
-                <p class="micro-copy"><i class="fas fa-lock"></i> Acesso Imediato • 15 Dias de Garantia</p>
             </div>
             <div class="hero-image fade-in-right">
-                <!-- Placeholder for 3D Mockup -->
-                <div class="mocku-container">
-                    <img src="assets/mockup-combo.png" alt="Algoritmo de Elite + Bonus" class="hero-mockup">
-                    <!-- If no image exists, CSS will handle a fallback or we use a div representation -->
+                <!-- Removed Video and broken floating image, keeping only structure if needed or simple placeholder -->
+                <!-- If image is broken, we can remove the img tag entirely to avoid red X -->
+                <!-- <img src="assets/mockup-combo.png" alt="Algoritmo de Elite" class="hero-mockup"> -->
+                <!-- Keeping visual empty or adding abstract graphic via CSS if desired, 
+                      User asked to "Remove any floating animation if no image is displayed".
+                      So we will just leave the column or put an icon representation. -->
+                <div class="icon-hero-placeholder">
+                    <i class="fas fa-brain"></i>
                 </div>
             </div>
         </div>
@@ -127,7 +120,6 @@
                     elite trabalhando 24/7 para você.</p>
             </div>
             <div class="turning-visual fade-in">
-                <!-- Abstract visual representing structure/order -->
                 <i class="fas fa-network-wired huge-icon"></i>
             </div>
         </div>
@@ -178,22 +170,7 @@
         </div>
     </section>
 
-    <!-- 5) THE STRATEGIC BONUS -->
-    <section class="bonus">
-        <div class="container bonus-box fade-in">
-            <div class="bonus-tag">BÔNUS ESTRATÉGICO</div>
-            <h2>THE LOGIC OF UNSTOPPABLE PROMPTS</h2>
-            <h3>(A Lógica dos Prompts Imparáveis)</h3>
-            <p>Pare de depender de "prompts prontos". Aprenda a engenharia por trás dos comandos.</p>
-            <ul class="bonus-benefits">
-                <li><i class="fas fa-check-circle"></i> O Framework R.C.E.P. (Role, Context, Explicit Instruction,
-                    Presentation)</li>
-                <li><i class="fas fa-check-circle"></i> Como corrigir alucinações da IA</li>
-                <li><i class="fas fa-check-circle"></i> Engenharia de Prompt para profissionais não-técnicos</li>
-            </ul>
-            <p class="bonus-value">Valor separado: <span class="strikethrough">R$ 97,00</span> (GRÁTIS HOJE)</p>
-        </div>
-    </section>
+    <!-- Removed Section 5: The Strategic Bonus (as requested) -->
 
     <!-- 6) SOCIAL PROOF -->
     <section class="social-proof">
@@ -262,29 +239,28 @@
         </div>
     </section>
 
-    <!-- 8) GUARANTEE -->
+    <!-- 8) GUARANTEE (Correction: 7 Days) -->
     <section class="guarantee">
         <div class="container guarantee-box fade-in">
             <i class="fas fa-shield-alt guarantee-icon"></i>
             <div class="guarantee-text">
-                <h3>GARANTIA INCONDICIONAL DE 15 DIAS</h3>
+                <h3>GARANTIA INCONDICIONAL DE 7 DIAS</h3>
                 <p>Teste o sistema. Aplique os prompts. Se você não sentir que economizou pelo menos 10 horas de
                     trabalho na primeira semana, nós devolvemos 100% do seu dinheiro. Sem perguntas.</p>
             </div>
         </div>
     </section>
 
-    <!-- 9) IRRESISTIBLE OFFER -->
+    <!-- 9) IRRESISTIBLE OFFER (No Bonus, Correct Upsell logic, Correct Price) -->
     <section class="offer" id="offer">
         <div class="container">
             <div class="offer-card fade-in">
                 <div class="offer-header">
                     <h2>PACOTE PROFISSIONAL DE ELITE</h2>
-                    <p>Acesso Vitalício + Atualizações</p>
+                    <p>Acesso Completo ao Método</p> <!-- Removed "Vitalício" -->
                 </div>
                 <div class="offer-body">
 
-                    <!-- COUNTDOWN TIMER (New CRO Element) -->
                     <div class="countdown-container">
                         <p>Oferta expira em:</p>
                         <div id="countdown" class="countdown-timer">15:00</div>
@@ -293,29 +269,22 @@
                     <div class="value-stack">
                         <div class="stack-item">
                             <span>Algoritmo de Elite™ (Ebook & Templates)</span>
-                            <span class="stack-price">R$ 197,00</span>
+                            <span class="stack-price">R$ 199,00</span>
                         </div>
-                        <div class="stack-item">
-                            <span>The Logic of Unstoppable Prompts (Bônus)</span>
-                            <span class="stack-price">R$ 97,00</span>
-                        </div>
-                        <div class="stack-total">
-                            <span>Valor Total</span>
-                            <span class="strike">R$ 294,00</span>
-                        </div>
+                        <!-- Removed Bonus Item -->
+                        <!-- Removed Total Value Calculation to simplify -->
                     </div>
 
                     <div class="pricing-display">
                         <p class="scarcity-text">OFERTA POR TEMPO LIMITADO</p>
+                        <p class="price-small strike">De R$ 199</p>
                         <div class="price-big">
-                            <span class="currency">12x de</span>
-                            <span class="amount">R$ 4,70</span>
+                            <span class="amount">R$ 47,00</span>
                         </div>
-                        <p class="cash-price">ou R$ 47,00 à vista</p>
+                        <p class="cash-price">À vista ou Parcelado</p>
                     </div>
 
-                    <a href="https://pay.kiwify.com.br/TMf8OkX" class="btn btn-primary btn-block pulsing-btn">SIM! QUERO
-                        ME
+                    <a href="https://pay.kiwify.com.br/TMf8OkX" class="btn btn-primary btn-block pulsing-btn">QUERO ME
                         TORNAR INDISPENSÁVEL</a>
 
                     <div class="secure-checkout">
@@ -323,7 +292,7 @@
                         <div class="payment-icons">
                             <i class="fab fa-cc-visa"></i>
                             <i class="fab fa-cc-mastercard"></i>
-                            <i class="fas fa-qrcode"></i> <!-- Pix symbol placeholder -->
+                            <i class="fas fa-qrcode"></i>
                         </div>
                     </div>
                 </div>
@@ -350,7 +319,7 @@
         </div>
     </footer>
 
-    <!-- STICKY MOBILE CTA (New CRO Element) -->
+    <!-- STICKY MOBILE CTA -->
     <div id="sticky-cta" class="sticky-cta">
         <a href="#offer" class="btn btn-primary btn-block">QUERO MEU ACESSO AGORA</a>
     </div>
