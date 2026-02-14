@@ -44,7 +44,7 @@
 
 <body>
 
-    <!-- 1) HEADER WITH OFFICIAL LOGO -->
+    <!-- 1) HEADER WITH LARGER OFFICIAL LOGO -->
     <header class="fade-in">
         <div class="container">
             <img src="assets/logo_official.png" alt="Algoritmo de Elite™" class="logo-img">
@@ -61,17 +61,14 @@
                     <span class="highlight">Algoritmo de Elite™</span> transforma profissionais comuns em estrategistas
                     indispensáveis.</p>
 
-                <a href="#offer" class="btn btn-primary pulsing-btn">SIM! QUERO DOBRAR MINHA PRODUTIVIDADE</a>
+                <a href="#offer" class="btn btn-primary pulsing-btn">SIM! QUERO DOMINAR A IA AGORA</a>
             </div>
             <div class="hero-image fade-in-right">
-                <!-- Removed Video and broken floating image, keeping only structure if needed or simple placeholder -->
-                <!-- If image is broken, we can remove the img tag entirely to avoid red X -->
-                <!-- <img src="assets/mockup-combo.png" alt="Algoritmo de Elite" class="hero-mockup"> -->
-                <!-- Keeping visual empty or adding abstract graphic via CSS if desired, 
-                      User asked to "Remove any floating animation if no image is displayed".
-                      So we will just leave the column or put an icon representation. -->
-                <div class="icon-hero-placeholder">
-                    <i class="fas fa-brain"></i>
+                <!-- Removed Distracting Brain Animation -->
+                <!-- Replaced with clean, static Book Icon to represent the Ebook/Method -->
+                <!-- Using a simple icon-placeholder-static class to avoid movement -->
+                <div class="icon-hero-placeholder-static">
+                    <i class="fas fa-book-open"></i>
                 </div>
             </div>
         </div>
@@ -120,6 +117,7 @@
                     elite trabalhando 24/7 para você.</p>
             </div>
             <div class="turning-visual fade-in">
+                <!-- Clean static icon -->
                 <i class="fas fa-network-wired huge-icon"></i>
             </div>
         </div>
@@ -169,8 +167,6 @@
             </div>
         </div>
     </section>
-
-    <!-- Removed Section 5: The Strategic Bonus (as requested) -->
 
     <!-- 6) SOCIAL PROOF -->
     <section class="social-proof">
@@ -239,7 +235,7 @@
         </div>
     </section>
 
-    <!-- 8) GUARANTEE (Correction: 7 Days) -->
+    <!-- 8) GUARANTEE (7 Days) -->
     <section class="guarantee">
         <div class="container guarantee-box fade-in">
             <i class="fas fa-shield-alt guarantee-icon"></i>
@@ -251,41 +247,42 @@
         </div>
     </section>
 
-    <!-- 9) IRRESISTIBLE OFFER (No Bonus, Correct Upsell logic, Correct Price) -->
+    <!-- 9) IRRESISTIBLE OFFER (Clean, R$ 47, No Upsell Stack) -->
     <section class="offer" id="offer">
         <div class="container">
             <div class="offer-card fade-in">
                 <div class="offer-header">
                     <h2>PACOTE PROFISSIONAL DE ELITE</h2>
-                    <p>Acesso Completo ao Método</p> <!-- Removed "Vitalício" -->
+                    <p>Acesso Completo ao Método</p> <!-- No Lifetime -->
                 </div>
                 <div class="offer-body">
 
+                    <!-- Countdown -->
                     <div class="countdown-container">
                         <p>Oferta expira em:</p>
                         <div id="countdown" class="countdown-timer">15:00</div>
                     </div>
 
+                    <!-- Simplified Value Stack: Only Main Product -->
                     <div class="value-stack">
                         <div class="stack-item">
                             <span>Algoritmo de Elite™ (Ebook & Templates)</span>
-                            <span class="stack-price">R$ 199,00</span>
+                            <span class="stack-price">R$ 197,00</span>
                         </div>
-                        <!-- Removed Bonus Item -->
-                        <!-- Removed Total Value Calculation to simplify -->
                     </div>
 
                     <div class="pricing-display">
                         <p class="scarcity-text">OFERTA POR TEMPO LIMITADO</p>
-                        <p class="price-small strike">De R$ 199</p>
+                        <p class="price-small strike">De R$ 197,00</p>
                         <div class="price-big">
+                            <span class="currency">Por apenas</span>
                             <span class="amount">R$ 47,00</span>
                         </div>
                         <p class="cash-price">À vista ou Parcelado</p>
                     </div>
 
-                    <a href="https://pay.kiwify.com.br/TMf8OkX" class="btn btn-primary btn-block pulsing-btn">QUERO ME
-                        TORNAR INDISPENSÁVEL</a>
+                    <a href="https://pay.kiwify.com.br/TMf8OkX" class="btn btn-primary btn-block pulsing-btn">SIM! QUERO
+                        DOMINAR A IA AGORA</a>
 
                     <div class="secure-checkout">
                         <i class="fas fa-lock"></i> Pagamento 100% Seguro
@@ -321,7 +318,7 @@
 
     <!-- STICKY MOBILE CTA -->
     <div id="sticky-cta" class="sticky-cta">
-        <a href="#offer" class="btn btn-primary btn-block">QUERO MEU ACESSO AGORA</a>
+        <a href="#offer" class="btn btn-primary btn-block">QUERO ACESSAR O ALGORITMO DE ELITE</a>
     </div>
 
     <!-- Scripts -->

@@ -178,13 +178,16 @@ header {
     /* Readability */
 }
 
-/* NEW LOGO STYLING */
+/* LOGO STYLING - LARGER */
 .logo-img {
-    max-height: 80px;
-    /* Adjust size as needed */
+    max-height: 120px;
+    /* Increased from 80px */
+    max-width: 90%;
+    /* Ensure fits on mobile */
     display: block;
     margin: 0 auto;
-    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
+    filter: drop-shadow(0 0 20px rgba(0, 0, 0, 0.7));
+    /* Stronger shadow */
 }
 
 /* =========================================
@@ -196,8 +199,8 @@ header {
     align-items: center;
     justify-content: center;
     position: relative;
-    padding: 140px 20px 60px;
-    /* Increased top padding for logo */
+    padding: 160px 20px 60px;
+    /* Increased top padding mainly for larger logo */
     background: radial-gradient(circle at top center, #1a1a2e 0%, var(--color-bg-dark) 70%);
     overflow: hidden;
 }
@@ -243,29 +246,17 @@ header {
     padding-left: 20px;
 }
 
-/* HERO PLACEHOLDER (Replaces missing image) */
-.icon-hero-placeholder {
-    font-size: 15rem;
+/* HERO PLACEHOLDER STATIC (Clean, no float) */
+.icon-hero-placeholder-static {
+    font-size: 12rem;
     color: rgba(255, 255, 255, 0.05);
+    /* Very subtle */
     display: flex;
     justify-content: center;
     align-items: center;
-    animation: float 6s ease-in-out infinite;
+    /* No animation to reduce distraction */
 }
 
-@keyframes float {
-    0% {
-        transform: translateY(0px);
-    }
-
-    50% {
-        transform: translateY(-20px);
-    }
-
-    100% {
-        transform: translateY(0px);
-    }
-}
 
 .scroll-indicator {
     position: absolute;
@@ -622,7 +613,8 @@ header {
 }
 
 .price-big .amount {
-    font-size: 4.5rem;
+    font-size: 5rem;
+    /* Increased size for impact */
     font-weight: 900;
     color: #fff;
     font-family: var(--font-heading);
