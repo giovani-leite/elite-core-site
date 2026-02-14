@@ -42,16 +42,6 @@ document.addEventListener('DOMContentLoaded', () => {
             } else {
                 content.style.maxHeight = "0";
             }
-
-            // Optional: Close other items (Accordion behavior)
-            /* 
-            accordionHeaders.forEach(otherHeader => {
-                if (otherHeader !== header && otherHeader.classList.contains('active')) {
-                    otherHeader.classList.remove('active');
-                    otherHeader.nextElementSibling.style.maxHeight = "0";
-                }
-            });
-            */
         });
     });
 
@@ -80,6 +70,55 @@ document.addEventListener('DOMContentLoaded', () => {
         const currentYear = new Date().getFullYear();
         // Just a safety check to replace if hardcoded 2026 changes
         footerYear.innerHTML = footerYear.innerHTML.replace('2026', currentYear);
+    }
+
+    /* =========================================
+       5. STICKY MOBILE CTA
+       ========================================= */
+    const stickyCta = document.getElementById('sticky-cta');
+    const heroSection = document.querySelector('.hero');
+
+    if (stickyCta && heroSection) {
+        window.addEventListener('scroll', () => {
+            const heroBottom = heroSection.getBoundingClientRect().bottom;
+
+            // Show sticky bar when user scrolls past the Hero section
+            if (heroBottom < 0) {
+                stickyCta.classList.add('visible');
+            } else {
+                stickyCta.classList.remove('visible');
+            }
+        });
+    }
+
+    /* =========================================
+       6. COUNTDOWN TIMER (15 Min Loop)
+       ========================================= */
+    const timerDisplay = document.getElementById('countdown');
+
+    if (timerDisplay) {
+        let time = 15 * 60; // 15 minutes in seconds
+
+        // Evergreen logic: reset to 15m if refresh. 
+        // Real tracking would require localStorage, but usually simple loop is fine for LP.
+
+        const updateTimer = () => {
+            const minutes = Math.floor(time / 60);
+            let seconds = time % 60;
+
+            seconds = seconds < 10 ? '0' + seconds : seconds;
+            timerDisplay.innerHTML = `${minutes}:${seconds}`;
+
+            if (time > 0) {
+                time--;
+            } else {
+                // Restart for evergreen effect
+                time = 15 * 60;
+            }
+        };
+
+        setInterval(updateTimer, 1000);
+        updateTimer(); // Initial call
     }
 
 });
