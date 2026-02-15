@@ -231,7 +231,6 @@ header {
     margin-bottom: 2rem;
     color: #ccc;
     border-left: 4px solid var(--color-secondary);
-    /* Purple emphasis */
     padding-left: 15px;
 }
 
@@ -327,7 +326,7 @@ header {
 }
 
 /* =========================================
-   6. CONTRAST SECTION (NEW)
+   6. CONTRAST SECTION
    ========================================= */
 .contrast-section {
     padding: var(--section-padding);
@@ -432,7 +431,6 @@ header {
     font-size: 1.3rem;
     font-weight: 600;
     color: var(--color-secondary);
-    /* Purple for variety */
     font-family: var(--font-heading);
 }
 
@@ -468,6 +466,66 @@ header {
 
 .checklist-item span {
     font-weight: 600;
+    font-size: 1.1rem;
+}
+
+/* =========================================
+   SOCIAL PROOF (NEW)
+   ========================================= */
+.social-proof {
+    padding: var(--section-padding);
+    background: #020205;
+}
+
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.testimonial-card {
+    background: var(--color-bg-card);
+    padding: 2rem;
+    border-radius: var(--border-radius);
+    border-top: 3px solid var(--color-primary);
+}
+
+.stars {
+    color: #ffd700;
+    margin-bottom: 1rem;
+}
+
+.testimonial-author {
+    margin-top: 1.5rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 1rem;
+    text-align: left;
+}
+
+.author-name {
+    display: block;
+    font-weight: bold;
+    color: #fff;
+    font-size: 1.1rem;
+}
+
+.author-role {
+    display: block;
+    font-size: 0.9rem;
+    color: var(--color-text-muted);
+}
+
+/* =========================================
+   AUTHORITY SECTION (NEW)
+   ========================================= */
+.authority-section {
+    padding: var(--section-padding);
+    background: linear-gradient(to bottom, #050508, #0e0e12);
+}
+
+.authority-content {
+    max-width: 800px;
+    margin: 0 auto;
     font-size: 1.1rem;
 }
 
@@ -556,6 +614,22 @@ header {
     font-weight: 700;
 }
 
+/* Value Anchor */
+.value-anchor {
+    text-align: center;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 8px;
+}
+
+.highlight-anchor {
+    color: var(--color-primary);
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-bottom: 0;
+}
+
 .final-price-display {
     text-align: center;
     margin: 2rem 0;
@@ -579,6 +653,12 @@ header {
     color: #fff;
     font-family: var(--font-heading);
     line-height: 1;
+}
+
+.pre-checkout-text {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #ccc;
 }
 
 .secure-checkout {
@@ -615,7 +695,6 @@ header {
         padding: 0;
     }
 
-    /* Contrast Grid stacks */
     .contrast-grid {
         grid-template-columns: 1fr;
         gap: 2rem;
@@ -624,8 +703,6 @@ header {
     .option-good {
         transform: scale(1);
     }
-
-    /* Remove scale on mobile for alignment */
 }
 
 @media (max-width: 768px) {
