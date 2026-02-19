@@ -121,4 +121,17 @@ document.addEventListener('DOMContentLoaded', () => {
         updateTimer(); // Initial call
     }
 
+    /* =========================================
+       7. FACEBOOK PIXEL EVENTS (InitiateCheckout)
+       ========================================= */
+    const checkoutLinks = document.querySelectorAll('a[href*="pay.kiwify.com.br"]');
+
+    checkoutLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            if (typeof fbq === 'function') {
+                fbq('track', 'InitiateCheckout');
+            }
+        });
+    });
+
 });
